@@ -1,0 +1,110 @@
+/* Nulstillelse af style */
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box; /* Murat fortæller senere om, hvad det her er */
+}
+
+:root {
+    --primary-color: #d35400;
+    --secondary-color: #a04000;
+    --accent-color: #f1c40f;
+    --background-color: #f5e6cc;
+    --tertiary-color: #8e44ad;
+    --complementary-color: #0060a0;
+}
+
+body{
+font-family: "Open Sans", sans-serif;
+font-size: 1rem;
+line-height: 1.7rem;
+padding: 1.2rem;
+}
+
+header{
+display: flex;
+flex-direction: row-reverse;
+justify-content: flex-end;
+align-items: center;
+}
+
+h1{
+font-size: 3.2rem;
+color: var(--primary-color);
+padding-left: 20%;   
+}
+
+h2{
+font-size: 2.15rem;
+color: var(--tertiary-color)
+}
+
+h3{
+font-size: 1.85rem;
+color: var(--accent-color);
+}
+
+h1, h2, h3 
+{font-family: "Merriweather", serif;}
+
+p{
+font-size: 1rem;
+}
+
+header img{
+height: auto;
+width: 46%;
+}
+
+main section{
+display: flex;
+flex-direction: column;
+}
+
+.article-1 {
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+text-align: left;
+}
+
+.article-2 {
+display: flex;
+flex-direction: row;
+align-items: center;
+text-align: center;
+gap:2.2rem;
+}
+
+.article-2 img{
+height: auto;
+width: 10%;
+transform: rotateZ(90deg);
+}
+
+.brand-name{
+color: var(--secondary-color);
+text-decoration: none;
+}
+
+.brand-name:hover{
+color: var(--complementary-color);
+text-decoration: none;
+}
+
+.article-1 p{
+margin: 1.15rem 0;
+font-size: 1.4rem;
+}
+
+.article-2 p{
+font-size: 1.4rem;    
+}
+
+footer p{
+font-style: italic;
+font-size: 1.2rem;
+text-align: center;
+}
+
